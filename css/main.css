@@ -1,0 +1,222 @@
+body {
+    text-align: center;
+    min-width: 900px;
+    background: url(../images/paper.png)
+}
+#header_text {
+    font: 70px 'Comfortaa', sans-serif;
+    font-weight: bolder;
+    padding: 20px 0;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.3);
+    position: fixed;
+    width: 100%;
+    min-width: 900px;
+    background: rgba(255, 255, 255, 0.9);
+    margin-top: -150px;
+    z-index: 9999;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.15);
+}
+
+#header_text span.extension {
+    font-weight: 300;
+    color: rgb(173, 173, 173);
+    font-size: 0;
+    margin: -15px;
+    opacity: 0;
+    -webkit-transition: font-size 0.5s, margin 0.5s, opacity 0.5s;
+    transition: font-size 0.5s, margin 0.5s, opacity 0.5s;
+}
+
+#header_text:hover span.extension {
+    font-size: 60px;
+    margin: 0 0 0 -19px;
+    opacity: 1;
+}
+
+#main {
+    margin: 150px auto 10px;
+    width: 900px;
+}
+
+.sub_block {
+    font-family: sans-serif;
+    padding: 50px;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.3);
+}
+
+.sub_block:nth-last-child(1) {
+    border-bottom: none;
+}
+
+.sub_block h1 {
+    font: 40px 'Comfortaa', sans-serif;
+}
+
+.sub_block h2 {
+    color: rgba(0, 0, 0, 0.5);
+    font-size: 18px;
+    margin-bottom: 30px;
+}
+
+#parts {
+    font-size: 0;
+}
+
+#diagram {
+    width: 300px;
+    height: 400px;
+    background: url(../images/diagram.png);
+    display: inline-table;
+    float: left;
+}
+
+#descriptions {
+    width: 500px;
+    height: 400px;
+    display: inline-table;
+}
+
+#diagram div {
+    position: absolute;
+}
+
+#diagram div:hover {
+    box-shadow: 0 0 0 3px white, 0 0 20px rgba(0, 0, 0, 0.3);
+}
+
+#leftbone {
+    height: 400px;
+    width: 20px;
+    margin-left: 20px;
+}
+
+#rightbone {
+    height: 400px;
+    width: 20px;
+    margin-left: 260px;
+}
+
+#base1 {
+    width: 220px;
+    height: 26px;
+    margin-left: 40px;
+    margin-top: 37px;
+}
+
+#base2 {
+    width: 220px;
+    height: 26px;
+    background: ;
+    margin-left: 40px;
+    margin-top: 137px;
+}
+
+#base3 {
+    width: 220px;
+    height: 26px;
+    margin-left: 40px;
+    margin-top: 237px;
+}
+
+#base4 {
+    width: 220px;
+    height: 26px;
+    margin-left: 40px;
+    margin-top: 337px;
+}
+
+#bond1 {
+    width: 10px;
+    height: 26px;
+    margin-left: 145px;
+    margin-top: 37px;
+}
+
+#bond2 {
+    width: 10px;
+    height: 26px;
+    margin-left: 145px;
+    margin-top: 137px;
+}
+
+#bond3 {
+    width: 10px;
+    height: 26px;
+    margin-left: 145px;
+    margin-top: 237px;
+}
+
+#bond4 {
+    width: 10px;
+    height: 26px;
+    margin-left: 145px;
+    margin-top: 337px;
+}
+
+.descriptor {
+    border: 1px solid rgba(0, 0, 0, 0.15);
+    box-shadow: 0 2px 3px rgba(0, 0, 0, 0.05);
+    padding: 20px;
+    text-align: left;
+    color: rgba(0, 0, 0, 0.7);
+    margin-bottom: 10px;
+    display: none;
+    position: absolute;
+    width: 500px; 
+    background: rgb(255, 255, 255);
+}
+
+.descriptor h1 {
+    font-size: 25px;
+    margin-bottom: 10px;
+}
+
+.descriptor p {
+    font-size: 17px;
+    line-height: 1.2;
+    color: rgba(0, 0, 0, 0.5);
+}
+
+.sub_block > span > h1 {
+    font-size: 30px;
+    margin-bottom: 10px;
+} 
+
+.sub_block > span > p {
+    line-height: 1.2;
+    color: rgba(0, 0, 0, 0.5);
+}
+
+span.dnacut {
+    border: 1px solid rgba(0, 0, 0, 0.3);
+    border-radius: 2px;
+    padding: 10px 5px 5px;
+    margin: 10px 5px;
+    display: inline-block;
+    color: rgba(0, 0, 0, 0.5);
+}
+
+span.dnacut i {
+    color: #ff279c;
+}
+
+#footer {
+    width: 100%;
+    border-top: 1px solid rgba(0, 0, 0, 0.3);
+    margin-top: -11px;
+    background: rgba(255, 255, 255, 0.5);
+}
+
+a {
+    text-decoration: none;
+    color: #00a7ff;
+    padding: 10px;
+    border: 1px solid rgba(0, 167, 255, 0.5);
+    border-radius: 2px;
+    margin: 0 3px;
+}
+
+a:hover {
+    background: #00a7ff;
+    color: white;
+}

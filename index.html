@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Forensic Science: DNA</title>
+        <link rel="stylesheet" type="text/css" href="css/reset.css">
+        <link rel="stylesheet" type="text/css" href="css/main.css">
+        <link href='http://fonts.googleapis.com/css?family=Arvo' rel='stylesheet' type='text/css'>
+        <link href='http://fonts.googleapis.com/css?family=Comfortaa:400,700,300' rel='stylesheet' type='text/css'>
+        <link rel="icon" type="image/png" href="images/favicon.ico">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
+    </head>
+    <body>
+        <h1 id="header_text">
+            <span style="color: #ff279c">D</span>
+            <span class="extension">eoxyribo</span>
+            <span style="color: #00a7ff">N</span>
+            <span class="extension">ucleic</span>
+            <span style="color: #ff8900">A</span>
+            <span class="extension">cid</span>
+        </h1>
+        <div id="main">
+            <div class="sub_block" id="parts">
+                <h1 style="color:#af30ff">Parts of DNA</h1>
+                <h2>Hover over a part to see its description</h2>
+                <div id="diagram">
+                    <div class="hoverpart" id="leftbone" show="bone"></div>
+                    <div class="hoverpart" id="rightbone" show="bone"></div>
+                    <div class="hoverpart" id="base1" show="base"></div>
+                    <div class="hoverpart" id="base2" show="base"></div>
+                    <div class="hoverpart" id="base3" show="base"></div>
+                    <div class="hoverpart" id="base4" show="base"></div>
+                    <div class="hoverpart" id="bond1" show="bond"></div>
+                    <div class="hoverpart" id="bond2" show="bond"></div>
+                    <div class="hoverpart" id="bond3" show="bond"></div>
+                    <div class="hoverpart" id="bond4" show="bond"></div>
+                </div>
+                <div id="descriptions">
+                    <div class="descriptor" style="color: #ff279c; display: block;">
+                        <p>Hover over a part of the diagram to the left to see its description</p>
+                    </div>
+                    <div class="descriptor" id="bone" style="color: #ff279c;">
+                        <h1>Backbones</h1>
+                        <p>Supporting the DNA strand are two ribbons called the backbones. The backbones are positioned in a double-helix shape and are made up of alternating sugars and salts.</p>
+                    </div>
+                    <div class="descriptor" id="base" style="color: #00a7ff;">
+                        <h1>Nitrogenous Bases</h1>
+                        <p>The unique sequence of bases in a strand of DNA is what makes it individually unique - except for identical twins, no two people will ever have the same sequence of bases. There are 4 bases, A, T, C, and G and they always come in pairs of A - T and C - G.</p>
+                    </div>
+                    <div class="descriptor" id="bond" style="color: #ff8900;">
+                        <h1>Hydrogen Bonds</h1>
+                        <p>Keeping the nitrogenous bases together are weak hydrogren bonds. These bonds are broken  when DNA is split into two during RNA synthesis.</p>
+                    </div>
+                </div>
+                <script src="scripts/scripts.js"></script>
+            </div>
+            <div class="sub_block" id="extract">
+                <h1 style="color:#ff279c">Extraction of DNA</h1>
+                <h2>Steps to removing DNA from a cell</h2>
+                <span style="text-align: left">
+                    <p>DNA is located in cells and can be found in all living things. At a crime scene, investigators primarily look for DNA evidence in sources:</p>
+                    <br />
+                    <span class="dnacut">Blood</span>
+                    <span class="dnacut">Saliva</span>
+                    <span class="dnacut">Bone</span>
+                    <span class="dnacut">Urine</span>
+                    <span class="dnacut">Root of Hair</span>
+                    <span class="dnacut">Semen</span>
+                    <span class="dnacut">Tooth</span>
+                    <br />
+                    <br />
+                    <h1 style="color:#ff8900">Breaking down the cell membranes</h1>
+                    <p>Since DNA is contained within the cell's nucleus, to get to it we must first get through the cell membrane surrounding the entire cell and the nuclear membrane surrounding the nucleus. Because cell membranes are made out of lipid (fats) bilayers, we can use soap to break down the membranes.</p>
+                    <br />
+                    <h1 style="color:#00a7ff">Breaking down the proteins</h1>
+                    <p>With the membranes broken down, we can now get to the DNA. The DNA strands are wrapped around proteins and in order to separate the DNA from the proteins, salt can be used to break down the proteins.</p>
+                    <br />
+                    <h1 style="color:#af30ff">Isolating the DNA</h1>
+                    <p>Now that we have separated the DNA from the cell, we need to isolate it from the surrounding cell fragments. To do so we will add alcohol which is less dense than water and thus will keep the DNA strands separated from everything else.</p>
+                </span>
+            </div>
+            <div class="sub_block" id="gel">
+                <h1 style="color:#00a7ff">Gel Electrophoresis</h1>
+                <h2>How to match an unknown sample of DNA to a known one</h2>
+                <span style="text-align: left">
+                    <p>Gel electrophoresis is a technique used to match unknown DNA samples to a known one. This is particularly useful in trying to match unknown DNA evidence from a crime scene to that of known suspects.</p>
+                    <br />
+                    <h1 style="color: #ff279c">Extracting DNA</h1>
+                    <p>To begin we must obtain DNA evidence by extracting it. See above for steps on how to extract DNA.</p>
+                    <br />
+                    <h1 style="color: #00a7ff">Cutting DNA</h1>
+                    <p>In order for gel electrophoresis to work, the strands of DNA must be cut into unique lengths so that they can be compared to one another. Since we know DNA is made up of unique sequences of nitrogenous bases, all we have to do is to cut the strands of DNA at specific sites where the sequence of bases are the same. To do this we use restriction enzymes. Restriction enzymes look for specific sequences of bases and cut the DNA at that point. Since different people have that specific seqence at different places within their DNA, cutting their DNA at those sites will produce unique DNA fragments in everyone.</p>
+                    <br />
+                    <p>In the example below, the restriction enzyme looks for the sequene ATTG and cuts it between the T's.</p>
+                    <span class="dnacut">ATTACGTTAGTCGTAA<i>ATTG</i>ATGCATGATGC<i>ATTG</i>ATCGACG<i>ATTG</i>ATGCATG<i>ATTG</i>AAG</span>
+                    <br />
+                    <span class="dnacut">ATTACGTTAGTCGTAAAT</span><span class="dnacut">TGATGCATGATGCAT</span><span class="dnacut">TGATCGACGAT</span><span class="dnacut">TGATGCATGAT</span><span class="dnacut">TGAAG</span>
+                    <br />
+                    <br />
+                    <h1 style="color: #af30ff">Sorting DNA</h1>
+                    <p>Gel electrophoresis sorts DNA fragments by size. Since no two individuals have the same DNA, cutting the DNA strands at specific points as illustrated above will produce differently sized fragments in different people. During this process, the cut DNA fragments are placed at one end of a porous gel material and an electrical current is passed through the fragments and the gel. The electric current carries the fragments through the gel and the smaller the fragment, the further it can go into the gel. The result is a ladder-like table with bars marking where different DNA fragments have made it into the gel.</p>
+                    <br />
+                    <img src="http://rin.io/wp-content/uploads/2014/06/1984_pfgel1.jpeg" width="400" style="padding: 0 200px; background: #1a1a1a; border-radius: 4px;"/>
+                    <br />
+                    <br />
+                    <h1 style="color: #ff8900">Analyze DNA</h1>
+                    <p>With the DNA fragments sorted by size, it's time to analyze the results and find matches. This can be done fairly easily by taking a look at the results generated by gel electrophoresis above. We can clearly tell which DNA samples match by seeing which pattern they best match up with. If two columns appear to have similar stripes in similar positions, it means that their DNA fragments were the same size and were able to travel the same distance into the gel and thuse they must have been cut from the same strand of DNA.</p>
+                    <br />
+                </span>
+            </div>
+            <div class="sub_block" id="forensic">
+                <h1 style="color:#af30ff">DNA in Forensic Science</h1>
+                <h2>How DNA is used in forensic science</h2>
+                <span style="text-align: left">
+                    <p>DNA is considered individual evidence because almost everyone's DNA is unique and an unknown sample of DNA can usually be traced back to only one person. DNA is an extremely helpful tool in a crime scene investigation (CSI) because it can help investigators trace crime scene evidence back to one person.</p>
+                    <br />
+                    <h1 style="color: #ff279c">Case solved by DNA fingerprinting</h1>
+                    <p>"A determined cop who was the original investigator into the murder of Krystal Beslanowitch 18 years ago in Utah helped bring resolution to this case. As The Huffington Post reports, Sheriff Todd Bonner just couldn’t let the case go. Beslanowitch was 17 years old when she died from a crushing blow to the skull. A prostitute, her body was found in 1995 along the Provo River.  Leads at the time only led to dead-ends, but investigators finally got somewhere in 2013, when new forensic technologies, taking a full day, were used to extract touch DNA (DNA from skin cells left behind when the suspect touches something) from the granite rock that crushed her skull. The DNA matched to a Joseph Michael Simpson, who had been a resort bus driver in the area at the time. Simpson, now 46, was arrested in Florida in September of this year."</p>
+                    <br />
+                    <br />
+                    <a href="http://www.forensicscolleges.com/blog/resources/10-cold-cases-solved" target="_blank">Source</a>
+                </span>
+            </div>
+        </div>
+        <div id="footer">
+            <div class="sub_block" id="forensic" style="border-bottom: none">
+                <h2 style="color:#00a7ff">SOURCES</h2>
+                <a href="http://www.forensicscolleges.com/blog/resources/10-cold-cases-solved" target="_blank">forensicscolleges.com</a>
+                <a href="http://www.scientificamerican.com/article/experts-touch-dna-jonbenet-ramsey/" target="_blank">scientificamerican.com</a>
+                <a href="http://www.phschool.com/science/biology_place/labbench/lab6/gelelect.html" target="_blank">phschool.com</a>
+                <a href="http://rin.io/wp-content/uploads/2014/06/1984_pfgel1.jpeg" target="_blank">photo source</a>
+                <br />
+                <br />
+                <br />
+                <br />
+                <span>
+                    <p>Forensic Science Project created by Tom Nguyen</p>
+                </span>
+            </div>
+        </div>
+    </body>
+</html>
